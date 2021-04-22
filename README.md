@@ -16,4 +16,4 @@ g) Databinding
 
 <img src="https://raw.githubusercontent.com/rezaulkhan111/MVVM_Android_Architecture_Component_app/master/Screenshot_20210422-185241_MVVM-Application.jpg" width="346" height="615" />
 
-<img src="https://raw.githubusercontent.com/rezaulkhan111/MVVM_Android_Architecture_Component_app/master/SmartSelect_20210422-184802_MVVM-Application.jpg" />
+<img src="https://raw.githubusercontent.com/rezaulkhan111/MVVM_Android_Architecture_Component_app/master/SmartSelect_20210422-184802_MVVM-Application.jpg" width="346" height="615" />
