@@ -1,6 +1,6 @@
 # MVVM_Android_Architecture_Component_app
 1. MVVM Architectural pattern
-<img src="https://miro.medium.com/max/2400/1*-yY0l4XD3kLcZz0rO1sfRA.png" width="346" height="615" />
+<img src="https://miro.medium.com/max/2400/1*-yY0l4XD3kLcZz0rO1sfRA.png" width="960" height="720" />
 
 # Programming Practices Followed
 a) Android Architectural Components <br/>
