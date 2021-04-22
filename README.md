@@ -11,5 +11,5 @@ e) Room Db for data caching <br/>
 f) Repository pattern <br/>
 g) Databinding
 
-Hear is App Screen Shots
-https://raw.githubusercontent.com/rezaulkhan111/MVVM_Android_Architecture_Component_app/master/Screenshot_20210422-185230_MVVM-Application.jpg
+# Screenshots
+<img src="https://raw.githubusercontent.com/rezaulkhan111/MVVM_Android_Architecture_Component_app/master/Screenshot_20210422-185230_MVVM-Application.jpg" />
