@@ -7,21 +7,21 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
-import androidx.fragment.app.Fragment;
 
 import javax.inject.Inject;
 
 import dagger.android.AndroidInjection;
 import dagger.android.AndroidInjector;
 import dagger.android.DispatchingAndroidInjector;
-import dagger.android.support.HasSupportFragmentInjector;
+import dagger.android.HasAndroidInjector;
+
 /**
  * Author: Rezaul Khan
  * github: https://github.com/rezaulkhan111
  */
-public abstract class BaseActivity<D extends ViewDataBinding> extends AppCompatActivity implements HasSupportFragmentInjector {
+public abstract class BaseActivity<D extends ViewDataBinding> extends AppCompatActivity implements HasAndroidInjector {
     @Inject
-    DispatchingAndroidInjector<Fragment> fragmentAndroidInjector;
+    DispatchingAndroidInjector<Object> fragmentAndroidInjector;
 
     @SuppressWarnings("unused")
     public D dataBinding;
@@ -36,8 +36,13 @@ public abstract class BaseActivity<D extends ViewDataBinding> extends AppCompatA
         dataBinding = DataBindingUtil.setContentView(this, getLayoutRes());
     }
 
+//    @Override
+//    public AndroidInjector<Fragment> supportFragmentInjector() {
+//        return fragmentAndroidInjector;
+//    }
+
     @Override
-    public AndroidInjector<Fragment> supportFragmentInjector() {
+    public AndroidInjector<Object> androidInjector() {
         return fragmentAndroidInjector;
     }
 }

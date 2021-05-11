@@ -1,19 +1,19 @@
 package dev.machine.code.mvvm_application;
 
-import android.app.Activity;
 import android.app.Application;
 
 import javax.inject.Inject;
 
 import dagger.android.AndroidInjector;
 import dagger.android.DispatchingAndroidInjector;
-import dagger.android.HasActivityInjector;
+import dagger.android.HasAndroidInjector;
 import dev.machine.code.mvvm_application.di.components.DaggerAppComponent;
+
 /**
  * Author: Rezaul Khan
  * github: https://github.com/rezaulkhan111
  */
-public class ThisApplication extends Application implements HasActivityInjector {
+public class ThisApplication extends Application implements HasAndroidInjector {
     private static ThisApplication thisApplication;
 
     public static ThisApplication getAppContext() {
@@ -25,7 +25,7 @@ public class ThisApplication extends Application implements HasActivityInjector 
     }
 
     @Inject
-    DispatchingAndroidInjector<Activity> activityDispatchingInjector;
+    DispatchingAndroidInjector<Object> activityDispatchingInjector;
 
     @Override
     public void onCreate() {
@@ -41,9 +41,13 @@ public class ThisApplication extends Application implements HasActivityInjector 
                 .inject(this);
     }
 
+//    @Override
+//    public AndroidInjector<Activity> activityInjector() {
+//        return activityDispatchingInjector;
+//    }
+
     @Override
-    public AndroidInjector<Activity> activityInjector() {
+    public AndroidInjector<Object> androidInjector() {
         return activityDispatchingInjector;
     }
-
 }
