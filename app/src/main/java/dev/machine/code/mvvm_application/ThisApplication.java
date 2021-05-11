@@ -41,11 +41,6 @@ public class ThisApplication extends Application implements HasAndroidInjector {
                 .inject(this);
     }
 
-//    @Override
-//    public AndroidInjector<Activity> activityInjector() {
-//        return activityDispatchingInjector;
-//    }
-
     @Override
     public AndroidInjector<Object> androidInjector() {
         return activityDispatchingInjector;
