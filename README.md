@@ -1,9 +1,9 @@
 # MVVM_Android_Architecture_Component_app
-1. MVVM Architectural pattern
+1. MVVM Architecture pattern
 <img src="https://miro.medium.com/max/2400/1*-yY0l4XD3kLcZz0rO1sfRA.png" width="960" height="720" />
 
 # Programming Practices Followed
-a) Android Architectural Components <br/>
+a) Android Architecture Components <br/>
 b) Dagger 2 for Dependency Injection <br/>
 c) MVVM <br/>
 d) Retrofit with Okhttp <br/>
